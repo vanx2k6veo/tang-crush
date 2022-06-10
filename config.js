@@ -12,7 +12,7 @@ const CONFIG = {
     question:'Tại sao vậy <3',
     btnReply: 'Gửi cho anh <3',
     reply: 'A Trêu e thế thoi chứ .. 😏 <33333333',
-    mess: '😏😏😏😏😏😏',
+    mess: 'Anh trêu E thế thôi chứ... 😏',
     messDesc: 'Chúc Bạn Ngày mới vui vẻ ',
     btnAccept: 'Okiiiii lun <3',
     messLink: 'https://www.facebook.com/tao.ten.la.van.vann ' //link mess của các bạn. VD: https://m.me/nam.nodemy
