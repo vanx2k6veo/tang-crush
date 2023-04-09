@@ -1,4 +1,4 @@
-#!/bin/php
+
 error_reporting(0);
 session_start();
 date_default_timezone_set("Asia/Ho_Chi_Minh");
@@ -51,7 +51,7 @@ $logo = "
 echo $logo;
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van."\033[1;31m[\033[1;33mTHÔNG BÁO\033[1;31m]\033[1;32m Đây Là Tool Free. Key Tool Phải Lấy Lại Mỗi Ngày Nhé\n";
-echo $van."$luc Link Key Hôm Nay Là :$vang $link \n";
+echo $van."$luc Link Key Hôm Nay Là :$vang $link  \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van."$luc Nhập API Key : $do";
 $pass=trim(fgets(STDIN));
@@ -86,7 +86,7 @@ echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 echo "                  ".$trang."[".$do." Tool Bản Quyền :".$vang." Nguyễn Doãn Văn ".$trang."]\n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." Nhập 1 TOOL FOLLOW TTC Tik Tok ".$trang."[".$do." TAY ".$trang."] \n";
-echo $van." Nhập 2 TOOL TDS TIKTOK ".$trang."[".$do." MỚI ".$trang."] \n";
+echo $van." Nhập 2 TOOL TDS TIKTOK_NOW ".$trang."[".$do." MỚI ".$trang."] \n";
 echo $van." Nhập 3 TOOL TDS INSTAGRAM ".$trang."[".$do." ĐA LUỒNG ".$trang."] \n";
 echo $van." Nhập 4 TOOL SHARE ẢO FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
 echo $van." Nhập 5 TOOL UNFOLLOW TIKTOK ".$trang."[".$do." MỚI ".$trang."]  \n";
@@ -100,17 +100,17 @@ while(true){
  if ( $ch == 1 ){
 	eval(file_get_contents('https://pastebin.com/raw/ZEy80Zpc'));
 }else if ( $ch == 2){
-	eval(file_get_contents('https://run.mocky.io/v3/ad3dca78-93fb-45d1-bd39-9890a4744a78'));
+	eval(file_get_contents('https://run.mocky.io/v3/9099a365-585a-4ec9-8c4a-1e33babcc09c'));
 	
 }else if ( $ch == 3 ){
 	
-	eval(file_get_contents('https://run.mocky.io/v3/9df3e4a1-d373-4755-92bd-5980c335e34d'));
+	eval(file_get_contents('https://run.mocky.io/v3/64a45e52-afb6-4fe3-a4aa-735e7028ed43'));
 	
 }else if ( $ch == 4 ){
 	eval(file_get_contents('https://run.mocky.io/v3/c40d3f18-431d-42be-a3b9-3dd445a26d75'));
 	
 }else if ( $ch == 5 ){
-	eval(file_get_contents('https://run.mocky.io/v3/3df3afe0-ec93-4ea3-8ae6-6d5f70698013'));
+	eval(file_get_contents('https://run.mocky.io/v3/70fd3008-67ef-4919-9f8c-c10bbab5bb15'));
 	
 }else if ( $ch == 6 ){
 	eval(file_get_contents('https://run.mocky.io/v3/e161ecee-25e7-4103-a88f-dfc05cad8580'));
