@@ -28,7 +28,7 @@ $today = date("d-m-y");
 $d = date("d-m");
 
 $key = "yamate".substr(md5($today), 0 , 8);
-
+$key_phi = file_get_contents("https://raw.githubusercontent.com/vanx2k6veo/van-van/main/Keyphi"); 
 $url_key = "https://lyquangtoai.cf/key/lyquangtoai.php?key=".$key;
 $api = @json_decode(file_get_contents("https://1link.vip/api?api=78a54eca1677a06c02a1bd6e944f97416505a45d&url=".$url_key),true);
 if ( $api["shortenedUrl"] ){
@@ -62,8 +62,11 @@ sleep(1);
 }else if ( $pass == "vandz" ){
 echo $vang." Key Admin \n";
 sleep(1);
+}else if ( $pass == "vandz" ){
+echo $vang." Key Phí \n";
+sleep(1);
 }else if ( $check = explode('|',explode($pass,$key_phi)[1])[0]){
-echo $vang." Key Chính Xác  \n";
+echo $vang." Key Phí  \n";
 sleep(2);
 
 }else{echo $do." Key Sai\n";
@@ -87,11 +90,12 @@ echo "                  ".$trang."[".$do." Tool Bản Quyền :".$vang." Nguyễ
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 echo $van." Nhập 1 TOOL FOLLOW TTC Tik Tok ".$trang."[".$do." TAY ".$trang."] \n";
 echo $van." Nhập 2 TOOL TDS TIKTOK_NOW ".$trang."[".$do." MỚI ".$trang."] \n";
-echo $van." Nhập 3 TOOL TDS INSTAGRAM ".$trang."[".$do." ĐA LUỒNG ".$trang."] \n";
-echo $van." Nhập 4 TOOL SHARE ẢO FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
-echo $van." Nhập 5 TOOL UNFOLLOW TIKTOK ".$trang."[".$do." MỚI ".$trang."]  \n";
-echo $van." Nhập 6 TOOL FOLLOW FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
-echo $van." Nhập 7 TOOL ADD BẠN BÈ FACEBOOK".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập 3 TOOL TDS TIKTOK THƯỜNG ".$trang."[".$do." MỚI ".$trang."] \n";
+echo $van." Nhập 4 TOOL TDS INSTAGRAM ".$trang."[".$do." ĐA LUỒNG ".$trang."] \n";
+echo $van." Nhập 5 TOOL SHARE ẢO FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập 6 TOOL UNFOLLOW TIKTOK ".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập 7 TOOL FOLLOW FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập 8 TOOL ADD BẠN BÈ FACEBOOK".$trang."[".$do." MỚI ".$trang."]  \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 
 echo $van." Nhập : ";
@@ -104,20 +108,23 @@ while(true){
 	
 }else if ( $ch == 3 ){
 	
+	eval(file_get_contents('https://raw.githubusercontent.com/vanx2k6veo/van-van/main/Tdstt'));
+}else if ( $ch == 4 ){
+	
 	eval(file_get_contents('https://run.mocky.io/v3/64a45e52-afb6-4fe3-a4aa-735e7028ed43'));
 	
-}else if ( $ch == 4 ){
+}else if ( $ch == 5 ){
 	eval(file_get_contents('https://run.mocky.io/v3/c40d3f18-431d-42be-a3b9-3dd445a26d75'));
 	
-}else if ( $ch == 5 ){
+}else if ( $ch == 6 ){
 	eval(file_get_contents('https://run.mocky.io/v3/70fd3008-67ef-4919-9f8c-c10bbab5bb15'));
 	
-}else if ( $ch == 6 ){
+}else if ( $ch == 7 ){
 	eval(file_get_contents('https://run.mocky.io/v3/e161ecee-25e7-4103-a88f-dfc05cad8580'));
 	
-}else if ( $ch == 7 ){
-	eval(file_get_contents("https://pastebin.com/raw/wyynuiSG"));
 }else if ( $ch == 8 ){
+	eval(file_get_contents("https://pastebin.com/raw/wyynuiSG"));
+}else if ( $ch == 9 ){
 	eval(file_get_contents('https://pastebin.com/raw/dfvnsj5u'));
 	
 }else{
