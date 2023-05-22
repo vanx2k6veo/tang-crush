@@ -1,4 +1,3 @@
-
 error_reporting(0);
 session_start();
 date_default_timezone_set("Asia/Ho_Chi_Minh");
@@ -29,8 +28,10 @@ $d = date("d-m");
 
 $key = "yamate".substr(md5($today), 0 , 8);
 $key_phi = file_get_contents("https://raw.githubusercontent.com/vanx2k6veo/van-van/main/Keyphi"); 
-$url_key = "https://lyquangtoai.cf/key/lyquangtoai.php?key=".$key;
+$url_key = "https://lyquangtoai.cf/key/dlow.php?key=".$key;
+
 $api = @json_decode(file_get_contents("https://1link.vip/api?api=78a54eca1677a06c02a1bd6e944f97416505a45d&url=".$url_key),true);
+
 if ( $api["shortenedUrl"] ){
 	$link = $api["shortenedUrl"] ;
 }else{
@@ -38,7 +39,6 @@ if ( $api["shortenedUrl"] ){
 	}
 $van = $trang."(".$do."◕‿◕".$trang.")".$do."➜".$luc;
 system('clear');
-
 $logo = "
 \033[1;34m██╗   ██╗ █████╗ ███╗   ██╗
 \033[1;97m██║   ██║██╔══██╗████╗  ██║
@@ -88,14 +88,15 @@ echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 echo "                  ".$trang."[".$do." Tool Bản Quyền :".$vang." Nguyễn Doãn Văn ".$trang."]\n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
-echo $van." Nhập 1 TOOL FOLLOW TTC Tik Tok ".$trang."[".$do." TAY ".$trang."] \n";
-echo $van." Nhập 2 TOOL TDS TIKTOK_NOW ".$trang."[".$do." MỚI ".$trang."] \n";
-echo $van." Nhập 3 TOOL TDS TIKTOK THƯỜNG ".$trang."[".$do." MỚI ".$trang."] \n";
-echo $van." Nhập 4 TOOL TDS INSTAGRAM ".$trang."[".$do." ĐA LUỒNG ".$trang."] \n";
-echo $van." Nhập 5 TOOL SHARE ẢO FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
-echo $van." Nhập 6 TOOL UNFOLLOW TIKTOK ".$trang."[".$do." MỚI ".$trang."]  \n";
-echo $van." Nhập 7 TOOL FOLLOW FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
-echo $van." Nhập 8 TOOL ADD BẠN BÈ FACEBOOK".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập ".$do."[".$trang."1".$do."]".$luc." TOOL FOLLOW TTC Tik Tok ".$trang."[".$do." TAY ".$trang."] \n";
+echo $van." Nhập ".$do."[".$trang."2".$do."]".$luc." TOOL TDS TIKTOK_NOW ".$trang."[".$do." MỚI ".$trang."] \n";
+echo $van." Nhập ".$do."[".$trang."3".$do."]".$luc." TOOL TDS TIKTOK THƯỜNG ".$trang."[".$do." MỚI ".$trang."] \n";
+echo $van." Nhập ".$do."[".$trang."4".$do."]".$luc." TOOL TDS INSTAGRAM ".$trang."[".$do." ĐA LUỒNG ".$trang."] \n";
+echo $van." Nhập ".$do."[".$trang."5".$do."]".$luc." TOOL SHARE ẢO FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập ".$do."[".$trang."6".$do."]".$luc." TOOL UNFOLLOW TIKTOK ".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập ".$do."[".$trang."7".$do."]".$luc." TOOL FOLLOW FACEBOOK ".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập ".$do."[".$trang."8".$do."]".$luc." TOOL ADD BẠN BÈ FACEBOOK".$trang."[".$do." MỚI ".$trang."]  \n";
+echo $van." Nhập ".$do."[".$trang."9".$do."]".$luc." TOOL TOOL SHARE ẢO BẰNG PAGE ".$trang."[".$do." HOTT ".$trang."]  \n";
 echo $trang."= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =\n";
 
 echo $van." Nhập : ";
@@ -125,10 +126,14 @@ while(true){
 }else if ( $ch == 8 ){
 	eval(file_get_contents("https://pastebin.com/raw/wyynuiSG"));
 }else if ( $ch == 9 ){
-	eval(file_get_contents('https://pastebin.com/raw/dfvnsj5u'));
+	eval(file_get_contents('https://run.mocky.io/v3/122ec254-745e-4708-85e3-abf1ef4b798e'));
 	
 }else{
 	echo $van." Sai lựa Chọn \n";
 	exit ;
 	
 }}
+
+
+
+
