@@ -125,8 +125,13 @@ if ($home_1["success"]== 200 ){
     
 }else{
 	$message = $home_1["message"];
+	if ( $message == "Bấm load jobs lại để lấy 100 jobs mới,cảm ơn bạn !"){
 	echo $van." TÌM NHIỆM VỤ THẤT BẠI : $message \n";
+	continue;
+	}else{
+		echo $van." TÌM NHIỆM VỤ THẤT BẠI : $message \n";
 	exit;
+	}
 }
 
 for($m=$dl;$m>-1;$m--){
