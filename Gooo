@@ -1,4 +1,3 @@
-
 error_reporting(0);
 session_start();
 date_default_timezone_set("Asia/Ho_Chi_Minh");
@@ -46,6 +45,10 @@ echo $van." NHẬP ACCOUNT_ID JOB TIKTOK : ";
 $account_id = trim(fgets(STDIN));
 echo $van." Nhập Delay : ";
 $dl = trim(fgets(STDIN));
+echo $van." Nhập Bao Nhiêu Job Thì Nghỉ : ";
+$dung = trim(fgets(STDIN));
+echo $van." Nhập Số Giây Muốn nghỉ : ";
+$bl = trim(fgets(STDIN));
 
 $url = "https://sv5.golike.net/api/users/me";
 $tsm = array(
@@ -181,7 +184,11 @@ echo "".$do." | ".$BBlue.$tt.$do." | ".$luc.$gio.$do." | ".$trang.$type_2.$do." 
     	$message = $skip["message"]; 
     	echo $van." $message \n";
 }
-
+if ($tt % $dung == 0 ){
+	for($m=$bl;$m>-1;$m--){
+    sleep(1);
+    echo $van." Đang Delay chống block $m \r";}
+	}
 
 
 
