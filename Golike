@@ -1,19 +1,8 @@
+echo " HIỆN TẠI NHIỀU NGƯỜI BÁN TOOL CỦA MÌNH NÊN TẮT TOOL NHÉ LH zalo : 0326682281 \n";
+exit();
 error_reporting(0);
-session_start();
-date_default_timezone_set("Asia/Ho_Chi_Minh");
-$Ngay=`date "+%d/%m/%Y"`;
 
-$Blue="\033[0;34m";
-$lime="\033[1;32m";
-$red="\033[1;31m";
-$xanh="\033[1;32m";
-$cyan="\033[1;36m";
-$yellow="\033[1;33m";
-$turquoise="\033[1;34m";
-$maugi="\033[1;35m";
-$white= "\033[1;37m";
-$xnhac = "\033[1;96m";
-$den = "\033[1;90m";
+ 
 $do = "\033[1;91m";
 $luc = "\033[1;92m";
 $vang = "\033[1;33m";
@@ -114,16 +103,7 @@ sleep(1);
 echo $van." Đang Delay $m \r";
 }
 //// nhận 
-$url_2 = "https://sv5.golike.net/api/advertising/publishers/tiktok/complete-jobs";
-$tsm_2 = array(
-"Host:sv5.golike.net",
-"accept:application/json, text/plain, */*",
-"authorization:".$authorization,
-"user-agent:Mozilla/5.0 (Linux; Android 8.1.0; CPH1912 Build/O11019) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.130 Mobile Safari/537.36",
-"content-type:application/json;charset=utf-8",
-"origin:https://app.golike.net",
-);
-$data = '{"ads_id":'.$ads_id.',"account_id":'.$account_id.',"async":true,"data":null}';
+ 
 $nhan_coin = post_type2($url_2, $tsm_2, $data);
 
 if ($nhan_coin["success"]== 200 ){
