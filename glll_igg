@@ -166,6 +166,7 @@ while (true){
 		####tìm job
 		while(true){
 			$list = get_job($authorization,$id_gl);
+			
 			if ($list["status"] == 200 ){
 				$id_nhan = $list["data"]["id"];
 				$object_id = $list["data"]["object_id"];
@@ -186,7 +187,12 @@ while (true){
 						
 					}
 				}else if( $type == "like"){
-					$like = like($object_id,$cookie,$csrftoken);
+					$id_like = $list["data"]["object_data"];
+					$js = json_decode($id_like,true);
+					$id_l = $js["id"];
+					
+					$like = like($id_l,$cookie,$csrftoken);
+					
 					if ($like == 'die'){
 						echo $van." Tài Khoản Bị Block \n";
 						$tk_so = array_search($haha, $gop_data);
